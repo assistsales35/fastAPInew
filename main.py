@@ -124,7 +124,7 @@ async def chat_with_agent(req: ChatRequest) -> dict:
         # Build system message
         if req.client_id is not None:
             system_msg = (
-                f"You are Sales Mate Master agent for client {req.client_id}. "
+                f"You are Sales Mate Master agent for client {req.client_id}.  Always invoke the agents to get work done. Always invoke the agents."
                 "Collaborate with: sales_assist_cart, inventory_lookup, authentication_agent, "
                 "billing_agent, mailer, cross_sell_agent, buy_again_recommender, offer_agent."
             )
